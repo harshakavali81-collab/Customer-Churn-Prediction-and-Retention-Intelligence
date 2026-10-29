@@ -1,0 +1,25 @@
+{
+  "dataset": "Synthetic subscription and support history",
+  "mode": "churn",
+  "seed": 42,
+  "split": "stratified holdout",
+  "features": [
+    "tenure_months",
+    "complaints_90d",
+    "autopay",
+    "monthly_cost"
+  ],
+  "models": {
+    "Logistic Regression": {
+      "pr_auc": 0.3663,
+      "roc_auc": 0.7061,
+      "recall": 0.66
+    },
+    "Random Forest": {
+      "pr_auc": 0.237,
+      "roc_auc": 0.6341,
+      "recall": 0.28
+    }
+  },
+  "limitation": "Synthetic results only; not verified on a real-world production dataset."
+}
